@@ -1,9 +1,10 @@
 # printers-viewer
 printers-viewer
 
-PUT /api/printers/metrics
-Origin: http://localhost:5173
-Authorization: Bearer <TOKEN>
+```js
+//PUT /api/printers/metrics
+//Origin: http://localhost:5173
+//Authorization: Bearer <TOKEN>
 
 async function actualizarMetricas(token, impresoras) {
   const response = await fetch(
@@ -44,3 +45,4 @@ await actualizarMetricas(sessionToken, [
     },
   },
 ]);
+```
