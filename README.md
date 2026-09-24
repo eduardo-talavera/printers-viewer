@@ -30,19 +30,29 @@ async function actualizarMetricas(token, impresoras) {
 
 await actualizarMetricas(sessionToken, [
   {
-    serialNumber: "SERIE-001",
-    isColor: true,
-    pageCounters: {
-      color: 400,
-      blackAndWhite: 600,
-      total: 1000,
+    "serialNumber": "H7X4603511",
+    "isColor": true,
+    "pageCounters": {
+      "color": 1250,
+      "blackAndWhite": 750,
+      "total": 2000
     },
-    tonerLevels: {
-      yellow: 80,
-      magenta: 70,
-      cyan: 60,
-      black: 50,
-    },
+    "tonerLevels": {
+      "yellow": 81,
+      "magenta": 64.5,
+      "cyan": 72,
+      "black": 58
+    }
   },
+  {
+    "serialNumber": "1A24Y21847",
+    "isColor": false,
+    "pageCounters": {
+      "blackAndWhite": 9500
+    },
+    "tonerLevels": {
+      "black": 37
+    }
+  }
 ]);
 ```
